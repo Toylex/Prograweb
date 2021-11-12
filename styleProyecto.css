@@ -1,0 +1,324 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 80%;
+    font-family: fantasy;
+    letter-spacing: 0.15em;
+    background-color: #fce4ec;
+
+
+
+    
+
+}
+
+
+.pagina{
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    margin: 50px auto 50px auto;
+    padding: 20px;
+    border: 4px double grey; background-color: white;
+
+    
+}
+
+
+.papel{
+    background-color: #e5e5f7;
+
+background-image:  linear-gradient(#efbaef 2px, transparent 2px), linear-gradient(90deg, #efbaef 2px, transparent 2px), linear-gradient(#efbaef 1px, transparent 1px), linear-gradient(90deg, #efbaef 1px, #e5e5f7 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+border-radius: 3%;
+}
+
+
+.logo_p{
+  
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+ }
+   
+
+    .nueva{
+        width: 36px;
+    }
+
+
+
+.portada{
+
+    display: block;
+    margin: 50px;
+    width: 600px;
+    height: 350px;
+    border-radius: 150px;
+    border: 5px solid #efbaef ;
+
+    
+}
+#navegacion{
+    width: 100%;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid gray;
+    border-bottom: 1px solid gray ;
+    text-align: center;
+    
+}
+
+
+
+li{
+    display: inline;
+    margin: 20px;
+}
+
+p{
+    text-align: right ;
+    width: 600px;
+    margin: 20px auto 20px auto;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+    border-radius: 90px;
+    font-size: 15px;
+ 
+}
+
+.a0:hover{
+
+    background-color: #F69C20;
+}
+
+.a1:hover{
+    background-color: #B22354;
+}
+
+.a2:hover{
+    background-color: #62B231;
+}
+
+.a3:hover{
+    background-color: #049A9D;
+}
+
+footer{
+    background-color: #efbaef ;
+    border: 4px double grey; background-color: white;
+    width: 100%;
+    padding: 40px;
+   
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 100vh;
+    padding: 40px;
+
+}
+
+.container-body{
+    display: flex;
+}
+.colum1{
+    max-width: 100vh;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.colum1 h1{
+    font-size: 20px;
+
+}
+.colum1 p{
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+.colum2{
+    max-width: 100vh;
+    padding-right: 10px;
+    
+}
+
+.colum2 h1{
+    font-size: 20px;
+
+}
+.row{
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 15px;
+
+
+    }
+.row img{
+    width: 35px;
+    height: 36px;
+
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.colum3{
+    max-width: 100vh;
+    
+}
+.colum3 h1{
+    font-size: 20px;
+
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.container-footer{
+    
+    width: 100%;
+    background-color: #efbaef;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border: 4px double grey; 
+
+}
+
+.container{
+    display: flex;
+    
+    background-color: white;
+    width: 0px;
+    padding: 50px;
+    
+     
+    
+}
+
+.container2{
+   margin-right: 500px;
+    background-color: red;
+    width: 0px;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    
+     
+    
+}
+
+
+  
+  
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin-right: 25px ;
+   
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  
+  .menu{
+   
+    text-align: center;
+    justify-content: flex-end;
+    opacity: 80%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+   
+
+    
+
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #efbaef;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  .copyright{
+      text-align: justify;
+  }
